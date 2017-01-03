@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+<!DOCTYPE html> 
+ <html> 
+   <head> 
+     <meta charset="utf-8"> 
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+      <title>AnythingFine</title> 
+ 
+    <link href="www/lib/ionic/css/ionic.css" rel="stylesheet"> 
+    <link href="www/css/style.css" media="screen and (max-device-width: 750px)" rel="stylesheet">
+    <link href="www/css/styleLarge.css" media="screen and (min-device-width: 751px)" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.6/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.js"></script> 
+    <script src="www/lib/ionic/js/ionic.bundle.js"></script>
 
- <style>
- #editor 
-    {
-        position: absolute;
-        width: 95%;
-        height: 95%;
-    }
-    body
-    {
-      background-color: black;
-    }
- </style>
-  </head>
-  <body>
-    <div id="editor">
-      function(foo){
-        var x = 2
-        return x
-      }
-    </div>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  
+    <!-- cordova script (this will be a 404 during development) --> 
+    <script src="cordova.js"></script> 
+    <script src="www/js/app.js"></script> 
+    <script src="www/js/controllers/baseCtrl.js"></script>
+    <script src="www/js/ionic-wheel.js"></script>
+    <script src="www/lib/collide.js"></script>
+    <link href="www/css/ion.wheel.css" rel="stylesheet">   
 
-  <script type="text/javascript">
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/tomorrow_night_eighties");
-    editor.getSession().setMode("ace/mode/javascript");
-    editor.setShowPrintMargin(false);
-
-  </script>
-  </body>
-</html>
+  </head> 
+  <body ng-app="ATF"> 
+    <ion-nav-view name="app-nav"></ion-nav-view> 
+    <script type="text/javascript"> 
+      
+    </script> 
+  </body> 
+</html> 
